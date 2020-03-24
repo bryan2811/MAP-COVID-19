@@ -28,10 +28,10 @@ const popup = new window.google.maps.InfoWindow()
 function renderExtraData({ confirmed, deaths, recovered, provincestate, countryregion }) {
     return ( `
         <div>
-            <p> <strong>${provincestate} - ${countryregion}</strong> </p>
-            <p> 🟠 Confirmados: ${confirmed} </p>
-            <p> 🔴 Muertes: ${deaths} </p>
-            <p> 🟢 Recuperados: ${recovered} </p>
+            <p> <strong>${provincestate} - ${countryregion} 📌</strong> </p>
+            <p> 💉 Confirmados: ${confirmed} </p>
+            <p> 🙏 Muertes: ${deaths} </p>
+            <p> ✅ Recuperados: ${recovered} </p>
         </div>   
     `)
 }
